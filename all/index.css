@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+body{
+	background: url(bar1.png);
+}
+h1{
+	text-align: center;
+	margin: 15px 0;
+}
+table,tbody,th,td,tr{
+	display: block;
+}
+table{
+	width: 85%;
+	margin: 10px auto;
+	min-width: 1360px;
+}
+tbody,tr{
+	width: 100%;
+}
+th,td{
+	padding: 7px 0px;
+	border-top: 1px solid #cacaca;
+	float: left;
+	width: 7.5%;
+	text-align: center;
+	border-left: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+	transition: all 0.5s;
+}
+td{
+	border-top: none;height: 40px;
+
+}
+th:first-child,td:first-child{
+	width: 10%;
+}
+th:nth-child(2),td:nth-child(2){
+	width: 10%;
+}
+td:nth-child(2){
+	text-align: left;
+}
+th:nth-child(6),td:nth-child(6){
+	width: 5%;
+}
+th:last-child,td:last-child{
+	border-right: 1px solid #cacaca;
+	width: 5%;
+}
+
+@media screen and (max-width: 1367px) {
+	table{
+		width: 100%;
+	}
+}
+td:hover,th:hover{
+	background: rgba(137,137,137,0.5);
+}
