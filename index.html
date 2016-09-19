@@ -102,9 +102,9 @@
 </div>
 
 <div class="banner">
-	<a href=""><img data="image/2.png" alt=""  class="z" ></a>
-	<a href=""><img data="image/3.png" alt="" ></a>
-	<a href=""><img data="image/5.png" alt="" ></a>
+	<a href=""><img src="image/2.png" alt=""  class="z" ></a>
+	<a href=""><img src="image/3.png" alt="" ></a>
+	<a href=""><img src="image/5.png" alt="" ></a>
 	<ul>
 		<li num=1 class="bar"></li>
 		<li num=2></li>
@@ -240,12 +240,11 @@ $('.bannerImg ').hover(function(){},function(){
 
 
 $(window).scroll(function(){
-
   $('img').each(function(){
     if($(this).attr('src')==null){
 				//这里的550 设置的是 整个图片的高度
 			//最好自己定义，不能直接height()/2  因为图片还没加载好
-if($(window).scrollTop()>=($(this).offset().top+550-$(window).innerHeight())){
+if($(window).scrollTop()>=($(this).offset().top+250-$(window).innerHeight())){
  $(this).attr('src',$(this).attr('data')).animate({'opacity':'1'},3000)
 				//动画随便写
 
